@@ -2,28 +2,97 @@
 <html>
     <head>
         <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                font-size: 14px;
+                font-family: arial, sans-serif;
+                color: #222;
+            }
+            #navbar {
+                display: flex;
+                align-items: center;
+                padding: 6px;
+                height: 60px;
+            }
+            .left {
+                display: inline-block;
+                padding: 5px;
+                margin: 0px 5px;
+            }
+            #about {
+                margin-left: 15px;
+            }
+            #right {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-end;
+                padding: 5px;
+                margin-right: 15px;
+                
+            }
+            #signin {
+                margin-left: 15px;
+            }
+            #logocontainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             #logo {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                margin-top: -178px;
-                margin-left: -136px;
+                display: block;
+                margin-top: 230px;
+            }
+            #search {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 25px;
+                border-radius: 16px;
+                
+            }
+            #footer {
+                display: flex;
+                flex-direction: row;
+            }
+            #images {
+                margin-left: 15px;
             }
             #appsicon {
                 width: 20px;
                 height: 20px;
+                margin-left: 15px;
             }
         </style>
     </head>
     <body>
-        <div id="navbar">
-            <a href= "">About</a>
-            <a href="">Store</a>
-            <a href="">Gmail</a>
-            <a href="">Images</a>
-            <image src="appsicon.png" alt="google apps icon" id="appsicon"></image>
-            <a href="">Sign in</a>
+        <div id="main"></div>
+            <div id="navbar">
+                <a href="" id="about" class="navbaricons left">About</a>
+                <a href="" id="store" class="navbaricons left">Store</a>
+                <div id="right">
+                    <a href="" id="gmail" class="navbaricons">Gmail</a>
+                    <a href="" id="images" class="navbaricons">Images</a>
+                    <img src="appsicon.png" id="appsicon" class="navbaricons">
+                    <a href="" id="signin" class="navbaricons">Sign in</a>
+                </div>
+            </div>
+            <div id="logocontainer">
+                <img src="googlelogo.png" id="logo">
+            </div>
+            <div id="search">
+                <form>
+                    <input id="search">
+                </form>
+            </div>
+            <div id="footer">
+                <a href="">Carbon neutral since 2007</a>
+            </div>
         </div>
-        <img src="googlelogo.png" alt="Google logo" id="logo">
     </body>
 </html>

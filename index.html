@@ -5,7 +5,7 @@
             html, body {
                 height: 100%;
                 width: 100%;
-                margin: 0px;
+                margin: -3px;
                 padding: 0px;
                 font-size: 14px;
                 font-family: arial, sans-serif;
@@ -23,7 +23,7 @@
                 margin: 0px 5px;
             }
             #about {
-                margin-left: 15px;
+                margin-left: 20px;
             }
             #right {
                 display: flex;
@@ -31,11 +31,23 @@
                 width: 100%;
                 justify-content: flex-end;
                 padding: 5px;
-                margin-right: 15px;
+                margin-right: 0px;
                 
             }
-            #signin {
+            #signinbutton {
+                background-color: rgb(0,115,255);
+                width: 100px;
+                height: 35px;
+                border-radius: 3px;
                 margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #signin { 
+                color: #fff;
+                
             }
             #logocontainer {
                 display: flex;
@@ -74,8 +86,15 @@
             #footer {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
-                
+                position: fixed;
+                bottom: 0px;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                background-color:rgba(236, 236, 236, 0.5);
+                height: 70px;
             }
             #images {
                 margin-left: 15px;
@@ -109,6 +128,54 @@
                 width: 15px;
                 height: 20px;
             }
+            #lucky {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 25px;
+            }
+            #googlesearch {
+                margin-right: 20px;
+                padding: 10px;
+                background-color: rgba(236, 236, 236, 0.5);
+                
+            }
+            #feelinglucky {
+                padding: 10px;
+                background-color: rgba(236, 236, 236, 0.5);
+            }
+            a:link, a:visited {
+                text-decoration: none;
+                color: rgba(8,8,8,.9);
+            }
+            #leftfooter {
+                margin-left: 50px;
+                height: 100%;
+                margin-top: 30px;
+                
+            }
+            #middlefooter {
+                margin-right: 100px;
+                height: 100%;
+                margin-top: 30px;
+            }
+            #rightfooter {
+                margin-right: 50px;
+                height: 100%;
+                margin-top: 30px;
+            }
+            #business {
+                margin-left: 20px;
+            }
+            #howsearchworks {
+                margin-left: 20px;
+            }
+            #privacy {
+                margin-right: 20px;
+            }
+            #terms {
+                margin-right: 20px;
+            }
         </style>
     </head>
     <body>
@@ -120,7 +187,9 @@
                     <a href="" id="gmail" class="navbaricons">Gmail</a>
                     <a href="" id="images" class="navbaricons">Images</a>
                     <img src="appsicon.png" id="appsicon" class="navbaricons">
-                    <a href="" id="signin" class="navbaricons">Sign in</a>
+                    <div id="signinbutton">
+                        <a href="" id="signin" class="navbaricons">Sign in</a>
+                    </div>
                 </div>
             </div>
             <div id="logocontainer">
@@ -137,15 +206,30 @@
                     </div>
                 </div>
             </form>
+
+            <div id="lucky">
+                <div id="googlesearch">
+                    <a href="">Google Search</a>
+                </div>
+                <div id="feelinglucky">
+                    <a href="">I'm Feeling Lucky</a>
+                </div>
+            </div>
             
             <div id="footer">
-                <a href="">Carbon neutral since 2007</a>
-                <a href="">Advertising</a>
-                <a href="">Business</a>
-                <a href="">How Search Works</a>
-                <a href="">Privacy</a>
-                <a href="">Terms</a>
-                <a href="">Settings</a>
+                <div id="leftfooter">
+                    <a href="">Advertising</a>
+                    <a href="" id="business">Business</a>
+                    <a href="" id="howsearchworks">How Search Works</a>
+                </div>
+                <div id="middlefooter">
+                    <a href="">Carbon neutral since 2007</a>
+                </div>
+                <div id="rightfooter">
+                    <a href="" id="privacy">Privacy</a>
+                    <a href="" id="terms">Terms</a>
+                    <a href="">Settings</a>
+                </div>
             </div>
         </div>
     </body>
